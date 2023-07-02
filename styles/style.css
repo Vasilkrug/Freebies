@@ -233,7 +233,9 @@ body {
     border: 1px solid #151515;
     display: inline-block;
     padding: 5px 10px;
+    text-transform: uppercase;
 }
+
 .about-us-description {
     max-width: 750px;
     display: flex;
@@ -242,18 +244,53 @@ body {
     align-items: flex-start;
     gap: 30px;
 }
+
 h2 {
     font-size: 60px;
     line-height: 58px;
 }
+
+@media (max-width: 445px) {
+    h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
 .about-us-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     list-style-type: square;
 }
+
 @media (max-width: 914px) {
     .about-us {
         flex-direction: column-reverse;
     }
+}
+
+.how-it-works-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.how-it-works-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.how-it-works-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 22px;
 }
