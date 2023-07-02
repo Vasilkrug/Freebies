@@ -20,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    margin: 0 auto;
 }
 
 @media (max-width: 764px) {
@@ -40,6 +41,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
+    list-style-type: none;
 }
 
 @media (max-width: 764px) {
@@ -53,6 +55,8 @@ body {
         right: 0;
         left: 0;
         top: 90px;
+        z-index: 2;
+        background-color: #F0F0F0;
     }
 }
 
@@ -65,7 +69,7 @@ body {
 .nav-item a {
     color: #151515;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 26px;
 }
 
@@ -85,6 +89,7 @@ body {
     width: 145px;
     height: 52px;
     border: 1px solid #151515;
+    font-weight: 700;
 }
 
 .auth button:hover {
@@ -127,5 +132,128 @@ body {
         transition: 0.5s;
         transform: rotate(35deg);
     }
+}
 
+.main {
+    max-width: 1440px;
+    margin: 50px auto 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 914px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+.hero-description {
+    max-width: 721px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-title {
+    font-size: 70px;
+}
+
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 445px) {
+    .hero-title {
+        font-size: 30px;
+    }
+}
+
+.hero-description p {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 565px;
+}
+
+.hero-img {
+    flex: 0 0 auto;
+}
+
+.hero-form input {
+    border: 1px solid #151515;
+    padding: 10px;
+    font-weight: 700;
+
+}
+
+.hero-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-form label {
+    display: block;
+}
+
+.button {
+    background-color: #151515;
+    color: #FFFFFF;
+    padding: 11px 30px;
+    font-weight: 700;
+}
+
+@media (max-width: 445px) {
+    .hero-form label, .hero-form input, .button {
+        width: 100%;
+    }
+
+}
+
+.payment {
+    display: flex;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #151515;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.about-us-description {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+h2 {
+    font-size: 60px;
+    line-height: 58px;
+}
+.about-us-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: square;
+}
+@media (max-width: 914px) {
+    .about-us {
+        flex-direction: column-reverse;
+    }
 }
