@@ -290,7 +290,82 @@ h2 {
     align-items: flex-start;
 }
 
+.how-it-works-img img {
+    width: 490px;
+    height: 700px;
+}
+
 h4 {
     font-weight: 700;
     font-size: 22px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.pricing-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.pricing-info {
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid #151515;
+    padding: 45px;
+}
+
+.pricing-card-price {
+    font-weight: 700;
+}
+
+.pricing-card-price span {
+    font-size: 80px;
+}
+
+.pricing-card-list {
+    list-style-type: square;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing-card .button {
+    width: 100%;
+}
+
+.pricing-card:hover {
+    background-color: #151515;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.pricing-card > .button {
+
+}
+
+.pricing-card:hover > .button {
+    background-color: #FFFFFF;
+    color: #151515;
 }
