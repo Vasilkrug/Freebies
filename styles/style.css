@@ -362,10 +362,59 @@ h4 {
 }
 
 .pricing-card > .button {
-
+    margin-top: auto;
 }
 
 .pricing-card:hover > .button {
     background-color: #FFFFFF;
     color: #151515;
+}
+
+.common-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 840px;
+}
+
+.common-text {
+    max-width: 530px;
+}
+
+.common-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 840px;
+    position: relative;
+}
+
+.common-details summary {
+    font-weight: 700;
+    font-size: 20px;
+    list-style: none;
+    position: relative;
+}
+
+summary:before {
+    content: url("/img/i_plus.png");
+    position: absolute;
+    right: 0;
+}
+
+details[open] summary:before {
+    content: url("/img/i_minus.png");
+    font-weight: 400;
+}
+
+.common-details details:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #151515;
+    left: 0;
+    right: 0;
+    transform: translateY(15px);
 }
