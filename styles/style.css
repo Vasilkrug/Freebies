@@ -2,16 +2,13 @@
 
 body {
     background-color: #F0F0F0;
-    max-width: 2560px;
-    margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
     color: #151515;
 }
 
-@media (max-width: 764px) {
-    body {
-        padding: 0 20px;
-    }
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -26,6 +23,7 @@ body {
 @media (max-width: 764px) {
     .header {
         justify-content: space-between;
+        padding: 20px 20px;
     }
 }
 
@@ -52,8 +50,8 @@ body {
         border-radius: 10px;
         flex-direction: column;
         padding: 10px;
-        right: 0;
-        left: 0;
+        right: 5px;
+        left: 5px;
         top: 90px;
         z-index: 2;
         background-color: #F0F0F0;
@@ -140,9 +138,13 @@ body {
     position: relative;
     z-index: 1;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
     gap: 100px;
+}
+
+@media (max-width: 764px) {
+    .main {
+        padding: 0 20px;
+    }
 }
 
 .section {
@@ -161,8 +163,6 @@ body {
 
 .hero-description {
     max-width: 721px;
-    display: flex;
-    flex-direction: column;
     gap: 30px;
 }
 
@@ -238,8 +238,6 @@ body {
 
 .about-us-description {
     max-width: 750px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
@@ -258,8 +256,6 @@ h2 {
 }
 
 .about-us-list {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     list-style-type: square;
 }
@@ -272,8 +268,6 @@ h2 {
 
 .how-it-works-list {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
     gap: 30px;
 }
 
@@ -284,15 +278,12 @@ h2 {
 }
 
 .how-it-works-description {
-    display: flex;
-    flex-direction: column;
     gap: 30px;
     align-items: flex-start;
 }
 
 .how-it-works-img img {
-    width: 490px;
-    height: 700px;
+    width: 580px;
 }
 
 h4 {
@@ -301,8 +292,6 @@ h4 {
 }
 
 .pricing {
-    display: flex;
-    flex-direction: column;
     gap: 50px;
 }
 
@@ -315,8 +304,6 @@ h4 {
 
 .pricing-info {
     max-width: 730px;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     align-items: flex-end;
 }
@@ -329,8 +316,6 @@ h4 {
 }
 
 .pricing-card {
-    display: flex;
-    flex-direction: column;
     gap: 40px;
     border: 1px solid #151515;
     padding: 45px;
@@ -346,8 +331,6 @@ h4 {
 
 .pricing-card-list {
     list-style-type: square;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 
@@ -370,9 +353,11 @@ h4 {
     color: #151515;
 }
 
+.common {
+    margin-bottom: 70px;
+}
+
 .common-description {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     gap: 30px;
     flex: 1 0 840px;
@@ -384,8 +369,6 @@ h4 {
 
 .common-details {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     gap: 40px;
     max-width: 840px;
     position: relative;
@@ -417,4 +400,94 @@ details[open] summary:before {
     left: 0;
     right: 0;
     transform: translateY(15px);
+}
+
+.footer {
+    width: 100%;
+    background-color: #151515;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+.footer-container {
+    max-width: 2280px;
+    margin: 0 auto;
+}
+
+.social-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.social-links img {
+    border: 2px dashed #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+    .social-links {
+        margin-top: 30px;
+    }
+}
+
+.footer-form {
+    margin-bottom: 50px;
+}
+
+.footer-form form {
+    display: flex;
+}
+
+.footer-form h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-form input {
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+}
+
+.footer-form button {
+    background-color: #FFFFFF;
+    padding: 11px;
+    color: #151515;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+}
+
+
+.footer-nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    max-height: 200px;
+}
+
+
+.footer-nav-list li:nth-of-type(2) {
+    height: 170px;
+}
+
+@media (max-width: 764px) {
+    .footer-nav-list {
+        max-height: 100%;
+    }
+
+    .footer-nav-list li:nth-of-type(2) {
+        height: 70px;
+    }
+}
+
+.footer-nav-list li a {
+    color: inherit;
 }
